@@ -9,8 +9,8 @@ def csv_data_reader(file):
                 data_read.append(
                     (
                         share["name"],
-                        share["price"],
-                        share["profit"],
+                        int(share["price"]),
+                        int(share["profit"]),
                     )
                 )
     return data_read
